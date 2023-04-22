@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="whole">
+      <nav>
+        <h2>LIBRARY</h2>
+        <button class="cta" id="add-btn">
+          <span>Add Item</span>
+          <svg class="svg" viewBox="0 0 13 10" height="10px" width="15px">
+            <path d="M1,5 L11,5"></path>
+            <polyline points="8 1 12 5 8 9"></polyline>
+          </svg>
+        </button>
+      </nav>
+      <div class="lower">
+        <div id="container">
+          <form action="">
+            <div class="add-book">
+              <div>
+                <p>title</p>
+                <input type="text" id="title" required />
+              </div>
+              <div>
+                <p>author</p>
+                <input type="text" id="author" required />
+              </div>
+              <div>
+                <p>pages</p>
+                <input type="number" id="pages" required />
+              </div>
+              <div class="read">
+                <p>read</p>
+                <div class="toggle-switch">
+                  <input class="toggle-input" id="toggle" type="checkbox" />
+                  <label class="toggle-label" for="toggle"></label>
+                </div>
+              </div>
+              <p id="izan"></p>
+              <button class="cta" id="btn">
+                <span>Add Item</span>
+                <svg class="svg" viewBox="0 0 13 10" height="10px" width="15px">
+                  <path d="M1,5 L11,5"></path>
+                  <polyline points="8 1 12 5 8 9"></polyline>
+                </svg>
+              </button>
+              <!-- <button type="button" class="button" id="btn">Add Item</button>   -->
+            </div>
+          </form>
+        </div>
+        <div id="right">
+          <div id="booksList"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
